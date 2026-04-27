@@ -4,156 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>foologistic | Logística per a e‑commerce</title>
-
 <style>
-:root {
-  --bg-main:#f4f6f8;
-  --bg-section:#eef2f6;
-  --bg-card:#ffffff;
-  --primary:#1e40af;
-  --text-main:#1f2937;
-  --text-soft:#4b5563;
-  --max-width:1100px;
+:root{
+  --bg-main:#f4f6f8;--bg-section:#eef2f6;--bg-card:#ffffff;
+  --primary:#1e40af;--text-main:#1f2937;--text-soft:#4b5563;--max-width:1100px;
 }
-
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-
-body{
-  font-family:"Segoe UI",system-ui,sans-serif;
-  background:var(--bg-main);
-  color:var(--text-main);
-  line-height:1.6;
-}
-
-/* NAV */
-header{
-  background:var(--bg-card);
-  border-bottom:1px solid #d1d5db;
-  position:sticky;
-  top:0;
-}
-
-.nav-container{
-  max-width:var(--max-width);
-  margin:auto;
-  padding:1rem;
-  display:flex;
-  justify-content:space-between;
-}
-
-nav a{
-  margin-left:1rem;
-  padding:.4rem .8rem;
-  border-radius:.3rem;
-  text-decoration:none;
-  color:var(--text-main);
-}
-
-nav a:hover,
-nav a.active{
-  background:var(--primary);
-  color:white;
-}
-
-/* SECCIONS */
-section{
-  max-width:var(--max-width);
-  margin:auto;
-  padding:4rem 1rem;
-}
-
-.alt{
-  background:var(--bg-section);
-  border-radius:1rem;
-}
-
-h1{font-size:2.6rem;margin-bottom:1rem}
-h2{font-size:2.1rem;margin-bottom:.8rem}
-h3{margin-bottom:.5rem}
-
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg-main);color:var(--text-main);line-height:1.6;}
+header{background:var(--bg-card);border-bottom:1px solid #d1d5db;position:sticky;top:0;}
+.nav-container{max-width:var(--max-width);margin:auto;padding:1rem;display:flex;justify-content:space-between;}
+nav a{margin-left:1rem;padding:.4rem .8rem;border-radius:.3rem;text-decoration:none;color:var(--text-main);}
+nav a:hover,nav a.active{background:var(--primary);color:white;}
+section{max-width:var(--max-width);margin:auto;padding:4rem 1rem;}
+.alt{background:var(--bg-section);border-radius:1rem;}
+h1{font-size:2.6rem;margin-bottom:1rem}h2{font-size:2.1rem;margin-bottom:.8rem}h3{margin-bottom:.5rem}
 p{color:var(--text-soft);margin-bottom:.8rem}
-ul{margin-left:1.2rem;margin-bottom:1rem}
-li{margin-bottom:.4rem}
-
-img{
-  max-width:100%;
-  border-radius:.6rem;
-  margin-top:1rem;
-}
-
-/* HERO */
-.hero{
-  text-align:center;
-  padding:5rem 1rem;
-  background:
-  linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),
-  url("https://www.foodlogistic.pl/wp-content/uploads/2023/04/logoonred-620x403-1.png");
-  color:white;
-}
+ul{margin-left:1.2rem;margin-bottom:1rem}li{margin-bottom:.4rem}
+img{max-width:100%;border-radius:.6rem;margin-top:1rem;}
+.hero{text-align:center;padding:5rem 1rem;background:linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),url("https://www.foodlogistic.pl/wp-content/uploads/2023/04/logoonred-620x403-1.png");color:white;}
 .hero p{color:#e5e7eb}
-
-/* CARDS */
-.cards{
-  display:grid;
-  gap:2rem;
-}
-
-.card{
-  background:var(--bg-card);
-  padding:1.8rem;
-  border-radius:.9rem;
-}
-
-/* ABOUT */
-.about{
-  display:grid;
-  gap:2.5rem;
-  align-items:center;
-}
+.cards{display:grid;gap:2rem;}
+.card{background:var(--bg-card);padding:1.8rem;border-radius:.9rem;}
+.about{display:grid;gap:2.5rem;align-items:center;}
 
 /* FORM */
-form{
-  background:var(--bg-card);
-  padding:2rem;
-  border-radius:.9rem;
-  max-width:520px;
-}
+form{background:var(--bg-card);padding:2rem;border-radius:.9rem;max-width:520px;}
+input,textarea,select{width:100%;margin-bottom:1rem;padding:.6rem;border-radius:.4rem;border:1px solid #cbd5e1;font-family:inherit;font-size:1rem;transition:border-color .2s;}
+input:focus,textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(30,64,175,.1);}
+button[type="submit"]{padding:.7rem 1.5rem;background:var(--primary);border:none;color:white;font-weight:bold;border-radius:.4rem;cursor:pointer;font-family:inherit;font-size:1rem;transition:background .2s;}
+button[type="submit"]:hover{background:#1e3a8a;}
 
-input,textarea{
-  width:100%;
-  margin-bottom:1rem;
-  padding:.6rem;
-  border-radius:.4rem;
-  border:1px solid #cbd5e1;
-}
+/* ── Consentiments ── */
+.form-consents{display:flex;flex-direction:column;gap:10px;margin-bottom:1rem;}
+.consent-item{display:flex;align-items:flex-start;gap:9px;cursor:pointer;}
+.consent-item input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:16px;height:16px;flex-shrink:0;margin-top:3px;border:1.5px solid #cbd5e1;border-radius:3px;background:white;cursor:pointer;transition:all .2s;position:relative;}
+.consent-item input[type="checkbox"]:checked{background:var(--primary);border-color:var(--primary);}
+.consent-item input[type="checkbox"]:checked::after{content:'';position:absolute;left:2px;top:1px;width:7px;height:4px;border-left:2px solid white;border-bottom:2px solid white;transform:rotate(-45deg);}
+.consent-item input[type="checkbox"]:focus{outline:3px solid rgba(30,64,175,.2);outline-offset:2px;}
+.consent-label{font-size:.81rem;color:var(--text-soft);line-height:1.5;}
+.consent-label a{color:var(--primary);font-weight:600;text-decoration:none;}
+.consent-label a:hover{text-decoration:underline;}
+.required-star{color:#dc2626;margin-left:2px;}
+.consent-error{color:#dc2626;font-size:.78rem;display:block;margin-top:3px;margin-left:25px;}
 
-button{
-  padding:.7rem 1.5rem;
-  background:var(--primary);
-  border:none;
-  color:white;
-  font-weight:bold;
-  border-radius:.4rem;
-  cursor:pointer;
-}
-
-/* FOOTER */
-footer{
+/* ── Banner de cookies ── */
+#cookie-banner{
+  position:fixed;bottom:0;left:0;right:0;z-index:9999;
   background:#1f2937;
-  color:white;
-  text-align:center;
-  padding:2rem;
+  border-top:3px solid var(--primary);
+  padding:1rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;flex-wrap:wrap;
+  transform:translateY(100%);
+  transition:transform .4s ease;
+  box-shadow:0 -4px 20px rgba(0,0,0,.2);
 }
+#cookie-banner.visible{transform:translateY(0);}
+#cookie-banner.hiding{transform:translateY(100%);}
+.ck-text{flex:1;min-width:240px;}
+.ck-text p{color:rgba(255,255,255,.8);font-size:.85rem;line-height:1.55;margin:0;}
+.ck-text p strong{color:white;}
+.ck-text a{color:#93c5fd;font-weight:600;text-decoration:none;}
+.ck-text a:hover{text-decoration:underline;}
+.ck-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;flex-shrink:0;}
+.ck-btn{padding:.45rem 1rem;border-radius:.35rem;font-size:.8rem;font-weight:700;cursor:pointer;border:none;font-family:inherit;white-space:nowrap;transition:all .2s;}
+.ck-accept{background:var(--primary);color:white;}
+.ck-accept:hover{background:#1e3a8a;}
+.ck-reject{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2);}
+.ck-reject:hover{color:white;border-color:rgba(255,255,255,.5);}
+.ck-config{background:transparent;color:#93c5fd;border:1px solid rgba(147,197,253,.3);}
+.ck-config:hover{background:rgba(147,197,253,.1);}
+@media(max-width:600px){#cookie-banner{padding:.9rem 1rem;}}
 
-@media(min-width:768px){
-  .cards{grid-template-columns:repeat(3,1fr)}
-  .about{grid-template-columns:1fr 1fr}
-}
+footer{background:#1f2937;color:white;text-align:center;padding:2rem;margin-top:3rem;}
+.footer-legal{margin-top:.75rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+.footer-legal a{color:#93c5fd;font-size:.85rem;text-decoration:none;}
+.footer-legal a:hover{text-decoration:underline;}
+
+@media(min-width:768px){.cards{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1fr 1fr}}
 </style>
 </head>
-
 <body>
+
+<!-- ══ BANNER DE COOKIES ══ -->
+<div id="cookie-banner" role="dialog" aria-label="Avís de cookies" aria-live="polite">
+  <div class="ck-text">
+    <p>🍪 <strong>Utilitzem cookies</strong> per millorar la teva experiència. Les tècniques són necessàries per al funcionament; les analítiques ens ajuden a millorar. Consulta la <a href="politica-cookies.html">Política de Cookies</a> i la <a href="politica-privacitat.html">Política de Privacitat</a>.</p>
+  </div>
+  <div class="ck-actions">
+    <button class="ck-btn ck-reject" onclick="cookieChoice('reject')">Rebutjar opcionals</button>
+    <a href="politica-cookies.html" class="ck-btn ck-config">Configurar</a>
+    <button class="ck-btn ck-accept" onclick="cookieChoice('accept')">Acceptar totes</button>
+  </div>
+</div>
 
 <header>
   <div class="nav-container">
@@ -170,10 +113,7 @@ footer{
 <!-- INICI -->
 <section id="inici" class="hero">
   <h1>Logística per a e‑commerce</h1>
-  <p>
-    A foologistic treballem perquè la logística deixi de ser un problema i es
-    converteixi en un avantatge competitiu pel teu negoci online.
-  </p>
+  <p>A foologistic treballem perquè la logística deixi de ser un problema i es converteixi en un avantatge competitiu pel teu negoci online.</p>
   <ul>
     <h3>Gestió eficient de comandes</h3>
     <h3>Processos clars i automatitzats</h3>
@@ -184,51 +124,24 @@ footer{
 <!-- SERVEIS -->
 <section id="serveis" class="alt">
   <h2>Serveis</h2>
-  <p>
-    Oferim solucions completes de logística pensades específicament per al
-    comerç electrònic, cobrint totes les fases del procés.
-  </p>
-
+  <p>Oferim solucions completes de logística pensades específicament per al comerç electrònic, cobrint totes les fases del procés.</p>
   <div class="cards">
     <div class="card">
-      <h3>Gestió d’enviaments</h3>
-      <p>
-        Ens encarreguem de tot el procés de preparació i enviament de les
-        comandes, assegurant rapidesa i fiabilitat.
-      </p>
-      <ul>
-        <li>Preparació de comandes</li>
-        <li>Seguiment i control d’enviaments</li>
-        <li>Gestió de devolucions</li>
-      </ul>
-      <img src="https://img.freepik.com/vector-premium/camion-lleno-productos-alimenticios_169241-5581.jpg">
+      <h3>Gestió d'enviaments</h3>
+      <p>Ens encarreguem de tot el procés de preparació i enviament de les comandes, assegurant rapidesa i fiabilitat.</p>
+      <ul><li>Preparació de comandes</li><li>Seguiment i control d'enviaments</li><li>Gestió de devolucions</li></ul>
+      <img src="https://img.freepik.com/vector-premium/camion-lleno-productos-alimenticios_169241-5581.jpg" alt="Enviaments">
     </div>
-
     <div class="card">
       <h3>Emmagatzematge</h3>
-      <p>
-        Disposem d’espais d’emmagatzematge optimitzats per garantir una gestió
-        d’estoc ordenada i eficient.
-      </p>
-      <ul>
-        <li>Control d’estoc informatitzat</li>
-        <li>Organització per referències</li>
-        <li>Escalabilitat segons volum</li>
-      </ul>
+      <p>Disposem d'espais d'emmagatzematge optimitzats per garantir una gestió d'estoc ordenada i eficient.</p>
+      <ul><li>Control d'estoc informatitzat</li><li>Organització per referències</li><li>Escalabilitat segons volum</li></ul>
     </div>
-
     <div class="card">
       <h3>Integracions digitals</h3>
-      <p>
-        Connectem els nostres sistemes amb la teva botiga online per
-        automatitzar processos i evitar errors manuals.
-      </p>
-      <ul>
-        <li>Sincronització de comandes</li>
-        <li>Actualització d’estoc en temps real</li>
-        <li>Integració amb plataformes e‑commerce</li>
-      </ul>
-      <img src="https://img.freepik.com/vector-gratis/red-medios-sociales-diseno-plano_23-2147525836.jpg?semt=ais_hybrid&w=740&q=80">
+      <p>Connectem els nostres sistemes amb la teva botiga online per automatitzar processos i evitar errors manuals.</p>
+      <ul><li>Sincronització de comandes</li><li>Actualització d'estoc en temps real</li><li>Integració amb plataformes e‑commerce</li></ul>
+      <img src="https://img.freepik.com/vector-gratis/red-medios-sociales-diseno-plano_23-2147525836.jpg?semt=ais_hybrid&w=740&q=80" alt="Integracions">
     </div>
   </div>
 </section>
@@ -237,15 +150,8 @@ footer{
 <section id="sobre" class="about">
   <div>
     <h2>Sobre nosaltres</h2>
-    <p>
-      foologistic és una empresa especialitzada en logística per a e‑commerce,
-      creada amb l’objectiu d’ajudar els negocis digitals a créixer de manera
-      ordenada i eficient.
-    </p>
-    <p>
-      Entenem les necessitats reals del comerç electrònic i oferim solucions
-      adaptades a cada projecte, independentment de la seva mida.
-    </p>
+    <p>foologistic és una empresa especialitzada en logística per a e‑commerce, creada amb l'objectiu d'ajudar els negocis digitals a créixer de manera ordenada i eficient.</p>
+    <p>Entenem les necessitats reals del comerç electrònic i oferim solucions adaptades a cada projecte, independentment de la seva mida.</p>
     <ul>
       <li>Especialització exclusiva en e‑commerce</li>
       <li>Experiència en diferents sectors digitals</li>
@@ -254,16 +160,13 @@ footer{
       <li>Compromís amb la qualitat del servei</li>
     </ul>
   </div>
-
-  <img src="https://cdn-icons-png.flaticon.com/512/15/15659.png">
+  <img src="https://cdn-icons-png.flaticon.com/512/15/15659.png" alt="foologistic">
 </section>
 
 <!-- CONTACTE -->
 <section id="contacte" class="alt">
   <h2>Contacte</h2>
-  <p>
-    <h3>Dades legals i corporatives de "FoodLogistic S.A."</h3>
-  </p>
+  <p><h3>Dades legals i corporatives de "FoodLogistic S.A."</h3></p>
   <ul>
     <li><h4>Raó social:</h4> FoodLogistic S.A.</li>
     <li><h4>NIF:</h4> A08123456</li>
@@ -273,47 +176,101 @@ footer{
     <li><h4>Telèfon:</h4> +34 935 55 55 55</li>
   </ul>
 
-  <form>
-    <input placeholder="Nom" required>
-    <input type="email" placeholder="Correu electrònic" required>
-    <input placeholder="Telèfon">
-    <textarea placeholder="Explica’ns"></textarea>
-    <button>Enviar</button>
+  <form id="contactForm" novalidate style="margin-top:1.5rem;">
+    <input id="nom" placeholder="Nom" required>
+    <input type="email" id="email" placeholder="Correu electrònic" required>
+    <input type="tel" id="telefon" placeholder="Telèfon">
+    <textarea id="missatge" rows="4" placeholder="Explica'ns"></textarea>
+
+    <!-- ══ CONSENTIMENTS ══ -->
+    <div class="form-consents">
+      <!-- Checkbox 1: dades personals (obligatori) -->
+      <label class="consent-item">
+        <input type="checkbox" id="consent-data" required>
+        <span class="consent-label">
+          He llegit i accepto la <a href="politica-privacitat.html" target="_blank">Política de Privacitat</a> i autoritzo el tractament de les meves dades per gestionar la meva consulta.<span class="required-star">*</span>
+        </span>
+      </label>
+      <!-- Checkbox 2: comunicacions comercials (opcional) -->
+      <label class="consent-item">
+        <input type="checkbox" id="consent-marketing">
+        <span class="consent-label">
+          Accepto rebre comunicacions comercials de foologistic. Pots revocar-ho en qualsevol moment. Consulta l'<a href="avis-legal.html" target="_blank">Avís Legal</a>.
+        </span>
+      </label>
+    </div>
+
+    <button type="submit">Enviar</button>
   </form>
+  <p id="formResponse" style="margin-top:1rem;font-weight:600;color:var(--primary);"></p>
 </section>
 
 <footer>
-© 2026 foologistic · Logística per a e‑commerce
+  © 2026 foologistic · Logística per a e‑commerce
+  <div class="footer-legal">
+    <a href="avis-legal.html">Avís Legal</a>
+    <a href="politica-privacitat.html">Política de Privacitat</a>
+    <a href="politica-cookies.html">Política de Cookies</a>
+  </div>
 </footer>
 
 <script>
+/* ── Banner de cookies ── */
+(function(){
+  const b=document.getElementById('cookie-banner');
+  if(!localStorage.getItem('fl_cookie_consent')){
+    setTimeout(()=>b.classList.add('visible'),800);
+  }
+  window.cookieChoice=function(c){
+    localStorage.setItem('fl_cookie_consent',JSON.stringify({choice:c,ts:Date.now()}));
+    b.classList.add('hiding');
+    setTimeout(()=>b.style.display='none',400);
+  };
+})();
+
+/* ── Nav scroll spy ── */
 const sections=document.querySelectorAll("section");
 const links=document.querySelectorAll("nav a");
-
 window.addEventListener("scroll",()=>{
-  let current="";
-  sections.forEach(s=>{
-    if(scrollY>=s.offsetTop-120) current=s.id;
-  });
-  links.forEach(a=>{
-    a.classList.toggle("active",a.getAttribute("href")==="#"+current);
-  });
+  let cur="";
+  sections.forEach(s=>{if(scrollY>=s.offsetTop-120)cur=s.id;});
+  links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+cur));
 });
+
+/* ── Formulari ── */
+(function(){
+  const form=document.getElementById('contactForm');
+  const resp=document.getElementById('formResponse');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const cd=document.getElementById('consent-data');
+    if(!cd.checked){
+      cd.style.borderColor='#dc2626';
+      const ex=form.querySelector('.consent-error');
+      if(!ex){
+        const err=document.createElement('span');
+        err.className='consent-error';
+        err.textContent="Has d'acceptar la política de privacitat per continuar.";
+        cd.closest('.consent-item').after(err);
+      }
+      cd.scrollIntoView({behavior:'smooth',block:'center'});
+      return;
+    }
+    const nom=document.getElementById('nom').value;
+    resp.textContent=`Gràcies, ${nom}. Hem rebut la teva sol·licitud.`;
+    form.reset();
+  });
+  document.getElementById('consent-data').addEventListener('change',function(){
+    this.style.borderColor='';
+    const err=form.querySelector('.consent-error');
+    if(err)err.remove();
+  });
+})();
 </script>
-<!-- Statcounter code for Web-corporativa-foodlogistic
-https://nillozano.github.io/Web-corporativa-foodlogistic/ on iWeb -->
-<script type="text/javascript">
-var sc_project=13221965; 
-var sc_invisible=1; 
-var sc_security="fa63b27c"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-Statcounter" href="https://statcounter.com/" target="_blank"><img
-class="statcounter" src="https://c.statcounter.com/13221965/0/fa63b27c/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+
+<!-- Statcounter -->
+<script type="text/javascript">var sc_project=13221965;var sc_invisible=1;var sc_security="fa63b27c";</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13221965/0/fa63b27c/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 </body>
 </html>
