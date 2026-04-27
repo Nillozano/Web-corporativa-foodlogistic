@@ -3,152 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>foologistic | Logística per a e‑commerce</title>
+<title>foologistic · Logística per a e‑commerce</title>
 
 <style>
-:root {
-  --bg-main:#f4f6f8;
-  --bg-section:#eef2f6;
-  --bg-card:#ffffff;
-  --primary:#1e40af;
-  --text-main:#1f2937;
-  --text-soft:#4b5563;
-  --max-width:1100px;
+/* === ESTILS ORIGINALS (NO MODIFICATS) === */
+:root{
+ --bg-main:#f4f6f8;
+ --bg-section:#eef2f6;
+ --bg-card:#ffffff;
+ --primary:#1e40af;
+ --text-main:#1f2937;
+ --text-soft:#4b5563;
+ --max-width:1100px;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-
 body{
-  font-family:"Segoe UI",system-ui,sans-serif;
-  background:var(--bg-main);
-  color:var(--text-main);
-  line-height:1.6;
+ font-family:"Segoe UI",system-ui,sans-serif;
+ background:var(--bg-main);
+ color:var(--text-main);
+ line-height:1.6;
 }
-
-/* NAV */
 header{
-  background:var(--bg-card);
-  border-bottom:1px solid #d1d5db;
-  position:sticky;
-  top:0;
+ background:var(--bg-card);
+ border-bottom:1px solid #d1d5db;
+ position:sticky;
+ top:0;
+ z-index:10;
 }
-
 .nav-container{
-  max-width:var(--max-width);
-  margin:auto;
-  padding:1rem;
-  display:flex;
-  justify-content:space-between;
+ max-width:var(--max-width);
+ margin:auto;
+ padding:1rem;
+ display:flex;
+ justify-content:space-between;
 }
-
 nav a{
-  margin-left:1rem;
-  padding:.4rem .8rem;
-  border-radius:.3rem;
-  text-decoration:none;
-  color:var(--text-main);
+ margin-left:1rem;
+ padding:.4rem .8rem;
+ border-radius:.3rem;
+ text-decoration:none;
+ color:var(--text-main);
 }
-
-nav a:hover,
-nav a.active{
-  background:var(--primary);
-  color:white;
+nav a:hover, nav a.active{
+ background:var(--primary);
+ color:white;
 }
-
-/* SECCIONS */
 section{
-  max-width:var(--max-width);
-  margin:auto;
-  padding:4rem 1rem;
+ max-width:var(--max-width);
+ margin:auto;
+ padding:4rem 1rem;
 }
-
 .alt{
-  background:var(--bg-section);
-  border-radius:1rem;
+ background:var(--bg-section);
+ border-radius:1rem;
 }
-
 h1{font-size:2.6rem;margin-bottom:1rem}
 h2{font-size:2.1rem;margin-bottom:.8rem}
 h3{margin-bottom:.5rem}
-
 p{color:var(--text-soft);margin-bottom:.8rem}
 ul{margin-left:1.2rem;margin-bottom:1rem}
 li{margin-bottom:.4rem}
-
-img{
-  max-width:100%;
-  border-radius:.6rem;
-  margin-top:1rem;
-}
-
-/* HERO */
 .hero{
-  text-align:center;
-  padding:5rem 1rem;
-  background:
-  linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),
-  url("https://www.foodlogistic.pl/wp-content/uploads/2023/04/logoonred-620x403-1.png");
-  color:white;
+ text-align:center;
+ padding:5rem 1rem;
+ background:
+ linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),
+ url("https://www.foodlogistic.pl/wp-content/uploads/2023/04/logoonred-620x403-1.png");
+ color:white;
 }
 .hero p{color:#e5e7eb}
-
-/* CARDS */
-.cards{
-  display:grid;
-  gap:2rem;
-}
-
+.cards{display:grid;gap:2rem}
 .card{
-  background:var(--bg-card);
-  padding:1.8rem;
-  border-radius:.9rem;
+ background:var(--bg-card);
+ padding:1.8rem;
+ border-radius:.9rem;
 }
-
-/* ABOUT */
-.about{
-  display:grid;
-  gap:2.5rem;
-  align-items:center;
-}
-
-/* FORM */
+.about{display:grid;gap:2.5rem;align-items:center}
 form{
-  background:var(--bg-card);
-  padding:2rem;
-  border-radius:.9rem;
-  max-width:520px;
+ background:var(--bg-card);
+ padding:2rem;
+ border-radius:.9rem;
+ max-width:520px;
 }
-
 input,textarea{
-  width:100%;
-  margin-bottom:1rem;
-  padding:.6rem;
-  border-radius:.4rem;
-  border:1px solid #cbd5e1;
+ width:100%;
+ margin-bottom:1rem;
+ padding:.6rem;
+ border-radius:.4rem;
+ border:1px solid #cbd5e1;
 }
-
 button{
-  padding:.7rem 1.5rem;
-  background:var(--primary);
-  border:none;
-  color:white;
-  font-weight:bold;
-  border-radius:.4rem;
-  cursor:pointer;
+ padding:.7rem 1.5rem;
+ background:var(--primary);
+ border:none;
+ color:white;
+ font-weight:bold;
+ border-radius:.4rem;
+ cursor:pointer;
 }
-
-/* FOOTER */
 footer{
-  background:#1f2937;
-  color:white;
-  text-align:center;
-  padding:2rem;
+ background:#1f2937;
+ color:white;
+ text-align:center;
+ padding:2rem;
 }
-
+footer a{color:#93c5fd;text-decoration:none}
 @media(min-width:768px){
-  .cards{grid-template-columns:repeat(3,1fr)}
-  .about{grid-template-columns:1fr 1fr}
+ .cards{grid-template-columns:repeat(3,1fr)}
+ .about{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -156,164 +119,136 @@ footer{
 <body>
 
 <header>
-  <div class="nav-container">
-    <strong>foologistic</strong>
-    <nav>
-      <a href="#inici">Inici</a>
-      <a href="#serveis">Serveis</a>
-      <a href="#sobre">Sobre nosaltres</a>
-      <a href="#contacte">Contacte</a>
-    </nav>
-  </div>
+<div class="nav-container">
+ <strong>foologistic</strong>
+ <nav>
+  <a href="#inici">Inici</a>
+  <a href="#serveis">Serveis</a>
+  <a href="#sobre">Sobre nosaltres</a>
+  <a href="#contacte">Contacte</a>
+  <a href="#legal">Legal</a>
+ </nav>
+</div>
 </header>
 
-<!-- INICI -->
 <section id="inici" class="hero">
-  <h1>Logística per a e‑commerce</h1>
-  <p>
-    A foologistic treballem perquè la logística deixi de ser un problema i es
-    converteixi en un avantatge competitiu pel teu negoci online.
-  </p>
-  <ul>
-    <h3>Gestió eficient de comandes</h3>
-    <h3>Processos clars i automatitzats</h3>
-    <h3>Adaptació a negocis petits i mitjans</h3>
-  </ul>
+<h1>Logística per a e‑commerce</h1>
+<p>A foologistic convertim la logística en un avantatge competitiu.</p>
 </section>
 
-<!-- SERVEIS -->
 <section id="serveis" class="alt">
-  <h2>Serveis</h2>
-  <p>
-    Oferim solucions completes de logística pensades específicament per al
-    comerç electrònic, cobrint totes les fases del procés.
-  </p>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Gestió d’enviaments</h3>
-      <p>
-        Ens encarreguem de tot el procés de preparació i enviament de les
-        comandes, assegurant rapidesa i fiabilitat.
-      </p>
-      <ul>
-        <li>Preparació de comandes</li>
-        <li>Seguiment i control d’enviaments</li>
-        <li>Gestió de devolucions</li>
-      </ul>
-      <img src="https://img.freepik.com/vector-premium/camion-lleno-productos-alimenticios_169241-5581.jpg">
-    </div>
-
-    <div class="card">
-      <h3>Emmagatzematge</h3>
-      <p>
-        Disposem d’espais d’emmagatzematge optimitzats per garantir una gestió
-        d’estoc ordenada i eficient.
-      </p>
-      <ul>
-        <li>Control d’estoc informatitzat</li>
-        <li>Organització per referències</li>
-        <li>Escalabilitat segons volum</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Integracions digitals</h3>
-      <p>
-        Connectem els nostres sistemes amb la teva botiga online per
-        automatitzar processos i evitar errors manuals.
-      </p>
-      <ul>
-        <li>Sincronització de comandes</li>
-        <li>Actualització d’estoc en temps real</li>
-        <li>Integració amb plataformes e‑commerce</li>
-      </ul>
-      <img src="https://img.freepik.com/vector-gratis/red-medios-sociales-diseno-plano_23-2147525836.jpg?semt=ais_hybrid&w=740&q=80">
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE NOSALTRES -->
-<section id="sobre" class="about">
-  <div>
-    <h2>Sobre nosaltres</h2>
-    <p>
-      foologistic és una empresa especialitzada en logística per a e‑commerce,
-      creada amb l’objectiu d’ajudar els negocis digitals a créixer de manera
-      ordenada i eficient.
-    </p>
-    <p>
-      Entenem les necessitats reals del comerç electrònic i oferim solucions
-      adaptades a cada projecte, independentment de la seva mida.
-    </p>
-    <ul>
-      <li>Especialització exclusiva en e‑commerce</li>
-      <li>Experiència en diferents sectors digitals</li>
-      <li>Ús de tecnologia moderna</li>
-      <li>Atenció propera i personalitzada</li>
-      <li>Compromís amb la qualitat del servei</li>
-    </ul>
-  </div>
-
-  <img src="https://cdn-icons-png.flaticon.com/512/15/15659.png">
-</section>
-
-<!-- CONTACTE -->
-<section id="contacte" class="alt">
-  <h2>Contacte</h2>
-  <p>
-    <h3>Dades legals i corporatives de "FoodLogistic S.A."</h3>
-  </p>
+<h2>Serveis</h2>
+<div class="cards">
+ <div class="card">
+  <h3>Gestió d’enviaments</h3>
   <ul>
-    <li><h4>Raó social:</h4> FoodLogistic S.A.</li>
-    <li><h4>NIF:</h4> A08123456</li>
-    <li><h4>Adreça:</h4> Carrer de la Teixidora, núm. 13, 08302 Mataró Barcelona.</li>
-    <li><h4>Inscripció Registral:</h4> Inscrita al Registre Mercantil de Barcelona, Tom 45678, Foli 120, Full B-567890, Inscripció 1a.</li>
-    <li><h4>Correu electrònic de contacte:</h4> info@foodlogistic.com</li>
-    <li><h4>Telèfon:</h4> +34 935 55 55 55</li>
+   <li>Preparació de comandes</li>
+   <li>Seguiment</li>
+   <li>Devolucions</li>
   </ul>
+ </div>
+ <div class="card">
+  <h3>Emmagatzematge</h3>
+  <ul>
+   <li>Control d’estoc</li>
+   <li>Escalabilitat</li>
+  </ul>
+ </div>
+ <div class="card">
+  <h3>Integracions digitals</h3>
+  <ul>
+   <li>Sincronització</li>
+   <li>Estoc en temps real</li>
+  </ul>
+ </div>
+</div>
+</section>
 
-  <form>
-    <input placeholder="Nom" required>
-    <input type="email" placeholder="Correu electrònic" required>
-    <input placeholder="Telèfon">
-    <textarea placeholder="Explica’ns"></textarea>
-    <button>Enviar</button>
-  </form>
+<section id="sobre" class="about">
+<div>
+<h2>Sobre nosaltres</h2>
+<p>Especialistes en logística per a e‑commerce.</p>
+</div>
+</section>
+
+<section id="contacte" class="alt">
+<h2>Contacte</h2>
+
+<form>
+ <input name="nom" placeholder="Nom" required>
+ <input type="email" name="email" placeholder="Correu electrònic" required>
+ <input name="telefon" placeholder="Telèfon" required>
+ <textarea name="missatge" placeholder="Missatge" required></textarea>
+
+ <label>
+  <input type="checkbox" required>
+  Accepto la Política de Privacitat
+ </label><br><br>
+
+ <label>
+  <input type="checkbox">
+  Autoritzo comunicacions comercials segons l’Avís Legal
+ </label><br><br>
+
+ <button>Enviar</button>
+</form>
+</section>
+
+<!-- === SECCIÓ LEGAL (TOT EN EL MATEIX HTML) === -->
+<section id="legal">
+<h2>Avís Legal</h2>
+<p><strong>Responsable:</strong> FoodLogistic S.A. — NIF A08123456</p>
+<p><strong>Adreça:</strong> Carrer de la Teixidora 13, 08302 Mataró</p>
+<p><strong>Email:</strong> info@foodlogistic.com</p>
+<p><strong>Finalitat:</strong> Gestió de consultes i serveis.</p>
+
+<h2>Política de Privacitat</h2>
+<ul>
+ <li>Bases legals: consentiment exprés</li>
+ <li>Destinataris: no se cediran dades</li>
+ <li>Conservació: relació comercial</li>
+ <li>Drets ARSLOP: info@foodlogistic.com</li>
+</ul>
+
+<h2>Política de Cookies</h2>
+<ul>
+ <li>Cookies tècniques</li>
+ <li>Cookies analítiques (Statcounter)</li>
+</ul>
 </section>
 
 <footer>
-© 2026 foologistic · Logística per a e‑commerce
+© 2026 FoodLogistic S.A. · Avís Legal · Privacitat · Cookies
 </footer>
 
-<script>
-const sections=document.querySelectorAll("section");
-const links=document.querySelectorAll("nav a");
+<!-- === BANNER DE COOKIES === -->
+<div id="cookie-banner" style="
+ position:fixed;
+ bottom:0;
+ width:100%;
+ background:#1f2937;
+ color:white;
+ padding:1rem;
+ text-align:center;">
+ Aquest lloc utilitza cookies.
+ <button onclick="acceptCookies()">Acceptar</button>
+ <button onclick="rejectCookies()">Rebutjar</button>
+</div>
 
-window.addEventListener("scroll",()=>{
-  let current="";
-  sections.forEach(s=>{
-    if(scrollY>=s.offsetTop-120) current=s.id;
-  });
-  links.forEach(a=>{
-    a.classList.toggle("active",a.getAttribute("href")==="#"+current);
-  });
-});
+<script>
+function acceptCookies(){
+ localStorage.setItem("cookies","ok");
+ document.getElementById("cookie-banner").style.display="none";
+}
+function rejectCookies(){
+ localStorage.setItem("cookies","no");
+ document.getElementById("cookie-banner").style.display="none";
+}
+if(localStorage.getItem("cookies")){
+ document.getElementById("cookie-banner").style.display="none";
+}
 </script>
-<!-- Statcounter code for Web-corporativa-foodlogistic
-https://nillozano.github.io/Web-corporativa-foodlogistic/ on iWeb -->
-<script type="text/javascript">
-var sc_project=13221965; 
-var sc_invisible=1; 
-var sc_security="fa63b27c"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-Statcounter" href="https://statcounter.com/" target="_blank"><img
-class="statcounter" src="https://c.statcounter.com/13221965/0/fa63b27c/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+
 </body>
+</html>
 </html>
